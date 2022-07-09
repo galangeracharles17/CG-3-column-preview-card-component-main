@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    /* PRIMARY COLORS */
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* NEUTRAL COLORS */
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+
+    /* FONT FAMILY */
+    --ff1: 'Big Shoulders Display', sans-serif;
+    --ff2: 'Lexend Deca', sans-serif;
+}
+
+html {
+    font-size: 15px;
+    font-family: var(--ff2);
+    color: var(--Transparent-white);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--Very-light-gray);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.component-card {
+    width: 300px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.component-card:nth-of-type(1) {
+    background-color: var(--Bright-orange);
+}
+
+.component-card:nth-of-type(2) {
+    background-color: var(--Dark-cyan);
+}
+
+.component-card:nth-of-type(3) {
+    background-color: var(--Very-dark-cyan);
+}
+
+.component-card-icon {
+    width: 60px;
+    height: 40px;
+    margin-bottom: 30px;
+}
+
+.component-card img {
+    width: 100%;
+}
+
+.component-card-header {
+    font-family: var(--ff1);
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.component-card-header-2,
+.component-card-header-3 {
+    color: var(--Very-light-gray);
+}
+
+.component-card-description {
+    line-height: 1.6;
+    margin-bottom: 60px;
+}
+
+.component-card-button button{
+    font-size: 15px;
+    padding: 15px 35px;
+    border-radius: 30px;
+    border: none;
+}
+
+.component-card-button-1 button {
+    color: var(--Bright-orange);
+    border: 1px solid var(blue);
+}
+
+.component-card-button-1 button:hover,
+.component-card-button-1 button:active {
+    color: var(--Very-light-gray);
+    border: 1px solid var(--Bright-orange);
+}
+
+.component-card-button-2 button {
+    color: var(--Dark-cyan);
+}
+
+.component-card-button-3 button {
+    color: var(--Very-dark-cyan);
+}
+
+
+
