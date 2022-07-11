@@ -47,6 +47,7 @@ main {
     padding: 40px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .component-card:nth-of-type(1) {
@@ -88,29 +89,50 @@ main {
 }
 
 .component-card-button button{
+    font-family: var(--ff2);
     font-size: 15px;
-    padding: 15px 35px;
+    padding: 12px 35px;
     border-radius: 30px;
     border: none;
 }
 
 .component-card-button-1 button {
     color: var(--Bright-orange);
-    border: 1px solid var(blue);
+    border: 3px solid var(--Transparent-white);
 }
 
 .component-card-button-1 button:hover,
 .component-card-button-1 button:active {
     color: var(--Very-light-gray);
-    border: 1px solid var(--Bright-orange);
+    background-color: var(--Bright-orange);
+    border: 3px solid var(--Transparent-white);
+    transition: 0.25s;
 }
 
 .component-card-button-2 button {
     color: var(--Dark-cyan);
+    border: 3px solid var(--Transparent-white);
+}
+
+.component-card-button-2 button:hover,
+.component-card-button-2 button:active {
+    color: var(--Very-light-gray);
+    background-color: var(--Dark-cyan);
+    border: 3px solid var(--Transparent-white);
+    transition: 0.25s;
 }
 
 .component-card-button-3 button {
     color: var(--Very-dark-cyan);
+    border: 3px solid var(--Transparent-white);
+}
+
+.component-card-button-3 button:hover,
+.component-card-button-3 button:active {
+    color: var(--Very-light-gray);
+    background-color: var(--Very-dark-cyan);
+    border: 3px solid var(--Transparent-white);
+    transition: 0.25s;
 }
 
 
